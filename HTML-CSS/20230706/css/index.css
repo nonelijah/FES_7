@@ -1,0 +1,83 @@
+/* 폰트 */
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* css */
+html body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-space {
+    width: 5vw;
+    height: 5vh;
+    margin: 20px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 2px solid gray;
+    border-radius: 15px;
+    box-shadow: 20px 10px 5px rgba(20, 0, 0, 0.2);
+    background-color: beige;
+
+}
+
+.btn-space button {
+    margin: 0.2vh;
+}
+
+hr {
+    margin-top: 80vh;
+}
+
+.food-menu {
+    width: 50vw;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 20px;
+    list-style: none;
+}
+
+.food-menu>li::before {
+    content: "추천드리는 음식은 ";
+}
+
+.food-menu>li::after {
+    content: "입니다.";
+}
+
+.blank {
+    width: 50vw;
+    height: 20vh;
+    margin: 5vw;
+    padding: 5vw;
+    background-color: black;
+
+    border: 4px solid gray;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgba(20, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.blank p {
+    color: white;
+    height: 10vh;
+    font-family: 'BookkMyungjo-Bd';
+    font-weight: 700;
+    font-size: large;
+    text-shadow: 10px 10px 5px rgba(255, 255, 255, 0.6);
+}
