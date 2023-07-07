@@ -46,7 +46,7 @@ div {
 .box1{
     background-color: #535353;
     color: white;
-    box-shadow: inset 10px 10px #656565;
+    box-shadow: inset 5px 5px #656565;
     border: 3px solid black;
 }
 
