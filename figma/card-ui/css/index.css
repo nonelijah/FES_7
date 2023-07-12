@@ -1,0 +1,26 @@
+/* font */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* reset css */
+body, h1, h2, p {
+    margin: 0;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* css */
+.card {
+    width: 288px;
+    height: 348px;
+    border-radius: 8px;
+    background-color: skyblue;
+}
