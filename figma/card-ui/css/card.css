@@ -1,0 +1,78 @@
+/* font */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* reset css */
+body, h1, h2, p {
+    margin: 0;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* css */
+.a11y-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.card {
+    width: 288px;
+    height: 348px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    max-width: 100%;
+    font-family: 'Pretendard-Regular', sans-serif;
+    margin: 10px;
+    color: #29363D;
+}
+
+.card img{
+    width: 100%;
+    aspect-ratio: 288/196;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 16px;
+}
+
+.content h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content p {
+    color: #5A6A72;
+    font-size: 12px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.6;
+    min-height: calc(1em * 1.6 * 2);
+}
+
+.card a{
+    text-decoration: underline;
+    font-weight: bold;
+}
