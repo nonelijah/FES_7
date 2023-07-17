@@ -1,0 +1,21 @@
+/* reset */
+h1, h2, ul, p {
+    margin: unset;
+    padding: unset;
+    font: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* css */
+.wrap {
+    width: 1280px;
+    height: 720px;
+    background-image: url(./images/bg.png);
+}
+
+header {
+    background-image: url(./images/animal01.png);
+}
