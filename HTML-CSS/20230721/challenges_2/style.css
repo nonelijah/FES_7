@@ -3,6 +3,13 @@ button {
     font: inherit;
 }
 
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     --title-size: 24px;
     --title-color: #ff007a;
@@ -66,15 +73,17 @@ body {
 .wrap .main {
     width: 100%;
     padding: 40px;
+}
+
+.bucket-list {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     flex-grow: 1;
     gap: 14px;
 }
 
-.main .btn {
+.bucket-list .btn {
+    width: 100%;
     max-width: calc(100% - 80px);
     min-height: 48px;
     border: 4px solid #d9d9d9;
@@ -88,7 +97,7 @@ body {
     transition: all 0.3s;
 }
 
-main .btn:hover {
+.bucket-list .btn:hover {
     border-color: var(--btn-active);
     color: var(--btn-active);
 }

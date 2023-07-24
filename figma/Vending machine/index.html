@@ -5,40 +5,71 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Vending machine</title>
-        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Noto+Sans+KR:wght@500;700&family=Noto+Serif+KR:wght@700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <header>
-            <h1 class="logo">
-                <img src="./img/Cola-logo.svg" alt="ColaCola" />
-            </h1>
-        </header>
+        <h1 class="title">
+            <img src="./img/Cola-logo.svg" alt="Cola Cola" />
+        </h1>
 
-        <main class="main">
-            <section class="main-section">
-                <h2 class="a11y-hidden">vending machine</h2>
-
-                <form class="select-zome">
-                    <button type="button" class="cola">
-                        <img
-                            src="./img/Cola-original.svg"
-                            alt="original_cola"
-                        />
-                        <p>Original_Cola</p>
-                        <div>1000원</div>
-                    </button>
-                </form>
+        <main class="wrap">
+            <h2 class="a11y-hidden">콜라 목록</h2>
+            <section class="section1">
+                <ul class="cola-list">
+                    <li>
+                        <button class="btn on">
+                            <img src="./img/Cola-original.svg" alt="" />
+                            <span>Original-cola</span>
+                            <strong>1000원</strong>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn" disabled>
+                            <img src="./img/Cola-violet.svg" alt="" />
+                            <span>Violet-cola</span>
+                            <strong>1000원</strong>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn">
+                            <img src="./img/Cola-yellow.svg" alt="" />
+                            <span>Yellow-cola</span>
+                            <strong>1000원</strong>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn">
+                            <img src="./img/Cola-cool.svg" alt="" />
+                            <span>Cool-cola</span>
+                            <strong>1000원</strong>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn on">
+                            <img src="./img/Cola-green.svg" alt="" />
+                            <span>Green-cola</span>
+                            <strong>1000원</strong>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn on">
+                            <img src="./img/Cola-orange.svg" alt="" />
+                            <span>Orange-cola</span>
+                            <strong>1000원</strong>
+                        </button>
+                    </li>
+                </ul>
             </section>
 
-            <div class="pay-group">
-                <section class="section">
-                    <h2></h2>
-                </section>
+            <section class="section2">section2</section>
 
-                <section class="section">
-                    <h2></h2>
-                </section>
-            </div>
+            <section class="section3">section3</section>
         </main>
     </body>
 </html>
