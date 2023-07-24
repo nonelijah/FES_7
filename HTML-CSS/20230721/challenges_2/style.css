@@ -85,6 +85,7 @@ body {
     background-color: white;
 
     position: relative;
+    transition: all 0.3s;
 }
 
 main .btn:hover {

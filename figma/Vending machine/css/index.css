@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
-.notosanskr * { 
-font-family: 'Noto Sans KR', sans-serif;
+.notosanskr * {
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 body {
@@ -9,7 +9,10 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     font: inherit;
     color: inherit;
 }
@@ -19,7 +22,7 @@ img {
 }
 
 button {
-    background:none;
+    background: none;
     font: inherit;
     border: 0;
     cursor: pointer;
@@ -38,8 +41,8 @@ button {
 }
 
 body {
-    background-color: #EAE8FE;
-    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #eae8fe;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
 header {
@@ -63,7 +66,7 @@ header {
     gap: 30px;
 }
 
-.main section{
+.main section {
     background-color: #fff;
 }
 
@@ -73,12 +76,12 @@ header {
     padding: 30px;
 
     display: grid;
-    grid-template-areas: 
-    "a b c"
-    "d e f"
-    "g g h"
-    "i i j"
-    "k k l";
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g g h"
+        "i i j"
+        "k k l";
 }
 
 .cola {
@@ -92,7 +95,7 @@ header {
     align-items: center;
 }
 
-.cola img{
+.cola img {
     width: 36px;
     aspect-ratio: 36/65;
 }
@@ -106,11 +109,11 @@ header {
     width: 70px;
     height: 22px;
     border-radius: 50px;
-    
+
     color: white;
     font-size: 12px;
-    background-color: #6327FE;
-    
+    background-color: #6327fe;
+
     display: flex;
     align-items: center;
     justify-content: center;
