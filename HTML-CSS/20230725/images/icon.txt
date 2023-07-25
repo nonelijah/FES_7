@@ -1,0 +1,41 @@
+.bg-icon_facebook {
+    width: 13px; height: 24px;
+    background: url('css_sprites.png') -94px -10px;
+}
+
+.bg-icon_google {
+    width: 22px; height: 22px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-icon_kakao {
+    width: 22px; height: 22px;
+    background: url('css_sprites.png') -52px -10px;
+}
+
+.bg-icon_naver {
+    width: 22px; height: 22px;
+    background: url('css_sprites.png') -10px -52px;
+}
+
+--------------------
+Retina
+
+.bg-facebook {
+    width: 26px; height: 48px;
+    background: url('css_sprites.png') -186px -20px;
+}
+
+.bg-google {
+    width: 42px; height: 44px;
+    background: url('css_sprites.png') -104px -20px;
+}
+
+.bg-kakao {
+    width: 42px; height: 42px;
+    background: url('css_sprites.png') -20px -104px;
+}
+
+.bg-naver {
+    width: 44px; height: 44px;
+    background: url('css_sprites.png') -20px -20
