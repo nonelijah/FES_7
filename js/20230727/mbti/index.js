@@ -14,6 +14,16 @@ var q = {
     12: { title: "문제 12번", type: "JP", A: "J", B: "P" },
 };
 
+var result = {
+    ISTJ: { animal: "하마", explain: "하마 설명", img: "lion.jpg" },
+    ENFP: {
+        animal: "멋쟁이 사자",
+        explain: "멋쟁이 사자 설명",
+        img: "lion.jpg",
+    },
+    ENTJ: { animal: "호랑이", explain: "호랑이 설명", img: "lion.jpg" },
+};
+
 function start() {
     $(".start").hide();
     $(".question").show();
@@ -42,6 +52,9 @@ function next() {
         $("#TF").val() < 2 ? (mbti += "F") : (mbti += "T");
         $("#JP").val() < 2 ? (mbti += "P") : (mbti += "J");
         alert(mbti);
+        $("#img").attr("src", result[mbti]["img"]);
+        $("#animal").html(result[mbti]["animal"]);
+        $("#explain").html(result[mbti]["explain"]);
     } else {
         $(".progress-bar").attr(
             "style",
@@ -49,8 +62,8 @@ function next() {
         );
         $("#title").html(q[num]["title"]);
         $("#type").val(q[num]["type"]);
-        $("#A").html(q[num]["title"]);
-        $("#B").html(q[num]["title"]);
+        $("#A").html(q[num]["A"]);
+        $("#B").html(q[num]["B"]);
     }
 
     num++;
