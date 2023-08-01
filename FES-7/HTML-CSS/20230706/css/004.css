@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    height: 10vh;
+    width: 100vw;
+    font-family: 'SUITE-Regular';
+    text-align: center;
+    padding-top: 50px;
+}
+
+div {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+p {
+    font-size: 32px;
+    font-family: 'BookkMyungjo-Bd';
+    text-shadow: 10px 10px 5px rgba(255, 255, 255, 0.6);
+}
+
+.text1 {
+    font-style: normal;
+    color: white;
+}
+
+.text2 {
+    font-style: italic;
+    color: yellow;
+}

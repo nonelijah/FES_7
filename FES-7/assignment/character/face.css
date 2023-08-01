@@ -1,0 +1,154 @@
+body {
+    margin: unset;
+    padding: unset;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 800px;
+    height: 800px;
+    /* background-color: skyblue; */
+
+    position: relative;
+    z-index: -100;
+}
+
+.wrap::before {
+    content: "(";
+    font-size: 300px;
+    position: relative;
+    top: calc(50% - 300px);
+}
+.wrap::after {
+    content: ")";
+    font-size: 300px;
+    position: relative;
+    top: -37%;
+    left: 90%;
+}
+
+/* 전면부 */
+.front {
+    z-index: 0;
+}
+
+.front div {
+    z-index: 0;
+    position: absolute;
+}
+/* 렌즈 */
+.lens {
+    width: 200px;
+    height: 180px;
+    background-color: #ccc;
+    border: 10px solid black;
+    border-radius: 80px;
+    z-index: 10;
+    overflow: hidden;
+
+    transition: all 2s;
+    animation: fade-out 8s 2s infinite;
+}
+
+.lens.left {
+    top: calc(50% - 180px);
+    left: calc(50% - 250px);
+}
+.lens.right {
+    top: calc(50% - 180px);
+    right: calc(50% - 250px);
+}
+
+.lens .light-ef {
+    width: 20%;
+    height: 150%;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@keyframes fade-out {
+    60% {
+        background-color: #ccc;
+    }
+    80% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+.eyes {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    background-color: #000;
+
+    position: absolute;
+    top: calc(50% - 90px);
+    transform: translate(-50%, -50%);
+    animation: twinkle 8s 2s infinite;
+}
+
+.eyes.left {
+    left: calc(50% - 130px);
+}
+
+.eyes.right {
+    left: calc(50% + 130px);
+}
+
+@keyframes twinkle {
+    60% {
+        height: 100px;
+    }
+    70% {
+        height: 10px;
+    }
+    75% {
+        height: 100px;
+    }
+    80% {
+        height: 10px;
+    }
+    85% {
+        height: 100px;
+    }
+}
+
+.bridge {
+    width: 100px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50% 50% 10px 10px;
+    top: calc(50% - 100px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.front::after {
+    content: "";
+    width: 100px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: calc(50% - 100px);
+    transition: all 0.5s;
+    transform: translateX(-50%);
+    animation: movement 8s 5s infinite;
+}
+
+@keyframes movement {
+    50% {
+        bottom: calc(50% - 120px);
+    }
+    60% {
+        bottom: calc(50% - 100px);
+    }
+}

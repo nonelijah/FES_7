@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>커스텀</title>
+        <style>
+            .txt-hide {
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+                clip-path: inset(50%);
+            }
+
+            .labl-hold {
+                position: relative;
+            }
+
+            .labl-hold::before {
+                display: inline-block;
+                content: "";
+                width: 22px;
+                height: 22px;
+                margin-right: 10px;
+                border: 1px solid black;
+                vertical-align: -6px;
+            }
+
+            .inp-hold:focus-visible + .labl-hold::before {
+                outline: 2px solid teal;
+                outline-offset: 3px;
+            }
+
+            .labl-hold::after {
+                content: "";
+                width: 22px;
+                height: 22px;
+
+                background: url(./images/checkmark.png) 0 0 / 22px no-repeat;
+                /* background-image: url(./images/checkmark.png);
+                background-size: 22px;
+                background-repeat: no-repeat; */
+
+                position: absolute;
+                top: 0;
+                left: 20px;
+                opacity: 0;
+
+                transition: all 0.3s ease;
+            }
+
+            .inp-hold:checked + .labl-hold::after {
+                left: 2px;
+                opacity: 1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input id="input-hold" class="inp-hold txt-hide" type="checkbox" />
+        <label for="input-hold" class="labl-hold">로그인 상태 유지</label>
+    </body>
+</html>

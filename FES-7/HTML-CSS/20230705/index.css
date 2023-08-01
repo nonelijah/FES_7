@@ -1,0 +1,45 @@
+html, body {
+    box-sizing: border-box;
+}
+
+h1 > strong {
+    background-color: khaki;
+}
+
+.void1{
+    height: 80vh;
+    background-color: beige;
+}
+
+.void2{
+    height: 50vh;
+    background-color: rgb(216, 243, 216);
+    text-align: center;
+}
+
+footer {
+    height: 50px;
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+}
+
+/* /* 자손 선택자( ) */
+section p{
+    background-color: yellow;
+}
+
+/* 자식 선택자(>) */
+/* section > p{
+    background-color: yellow;
+} */
+
+/* 일반 형제 선택자(~) */
+/* section ~ p{
+    background-color: yellow;
+} */
+
+/* 인접 형제 선택자 */
+/* section + p{
+    background-color: yellow;
+} */
