@@ -17,7 +17,9 @@
 
             <section class="login-input">
                 <h2 class="a11y-hidden">로그인 입력창</h2>
-                <p class="slogan">위니브에서 궁금증을 해결하세요! :)</p>
+                <p class="slogan">
+                    위니브에서 여러분의 궁금증을 해결하세요! :)
+                </p>
 
                 <form class="login-form" method="post">
                     <!-- 클래스 error로 임시처리 -->
@@ -40,8 +42,16 @@
                     <!-- <p pw="error-login">
                         아이디 혹은 비밀번호가 일치하지 않습니다.
                     </p> -->
-                    <input class="txt-hide" type="checkbox" id="login-hold" />
-                    <label class="" for="login-hold">로그인 상태 유지</label>
+                    <div class="login-hold">
+                        <input
+                            class="txt-hide"
+                            type="checkbox"
+                            id="login-hold"
+                        />
+                        <label class="labl-hold" for="login-hold"
+                            >로그인 상태 유지</label
+                        >
+                    </div>
                     <button type="submit" class="btn-login">로그인</button>
                 </form>
                 <a href="#">회원가입</a>

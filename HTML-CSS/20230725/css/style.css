@@ -73,6 +73,7 @@ body {
     border-radius: 10px;
     margin: auto;
     background-color: white;
+    background: url(../images/modal.png);
 }
 
 /* header */
@@ -100,7 +101,7 @@ body {
 
 .slogan {
     font-size: 20px;
-    margin: 26px auto 24px 24px;
+    margin: 23px auto 22px 24px;
 }
 
 /* login-form */
@@ -113,6 +114,7 @@ body {
 }
 
 [class^="inp"] {
+    box-sizing: border-box;
     width: 472px;
     height: 50px;
     border: 1px solid #c4c4c4;
@@ -128,6 +130,49 @@ body {
 
 [class^="inp"].error {
     border: 2px solid #f4492e;
+}
+
+/* login-hold */
+.login-hold {
+    display: flex;
+    align-self: flex-start;
+}
+
+.txt-hide {
+    width: 1px;
+    height: 1xp;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+.labl-hold {
+    position: relative;
+    font-size: 16px;
+    color: #767676;
+    top: 3px;
+    left: 20px;
+}
+
+.labl-hold::before,
+.labl-hold::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+}
+
+.labl-hold::before {
+    display: inline-block;
+    background-color: #2f80ed;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: -6px;
+}
+
+.labl-hold::after {
+    background: url(../images/Vector.svg) 0 0 /10px no-repeat;
+    position: absolute;
+    top: 11px;
+    left: 6px;
 }
 
 /* 참고 css */
