@@ -113,7 +113,8 @@ body {
     gap: 10px;
 }
 
-[class^="inp"] {
+[class^="inp"],
+.btn-login {
     box-sizing: border-box;
     width: 472px;
     height: 50px;
@@ -162,17 +163,38 @@ body {
 
 .labl-hold::before {
     display: inline-block;
-    background-color: #2f80ed;
+    box-sizing: border-box;
+    background-color: #fff;
     border-radius: 50%;
     margin-right: 8px;
     vertical-align: -6px;
+    border: 1px solid #767676;
 }
 
 .labl-hold::after {
-    background: url(../images/Vector.svg) 0 0 /10px no-repeat;
+    background: url(../images/Vector-def.svg) 0 0 /10px no-repeat;
     position: absolute;
     top: 11px;
     left: 6px;
+}
+
+.inp-hold:checked + .labl-hold::before {
+    background-color: #2f80ed;
+}
+
+.inp-hold:checked + .labl-hold::after {
+    background: url(../images/Vector.svg) 0 0 / 10px no-repeat;
+}
+
+.btn-login {
+    margin-top: 13px;
+
+    border: 0;
+    background-color: #2f80ed;
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 /* 참고 css */

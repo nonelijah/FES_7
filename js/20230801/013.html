@@ -13,7 +13,7 @@
             console.log(str.slice(0, 7));
             console.log(str.slice(7, 3)); // 작동은 하지만 빈문자열이 나옵니다.
             console.log(str.slice(2)); // 실무에서 많이 사용합니다!
-            console.log(str.slice(, 5)); // error
+            // console.log(str.slice(, 5)); // error
             console.log(str.slice(-6, 0)); // 작동은 하지만 빈문자열이 나옵니다.
             console.log(str.slice(-6));
 
@@ -27,7 +27,7 @@
             // substring과 slice의 차이점
             // 1. 음수 취급
             // slice는 음수를 취급하지만 substring은 양수로 취급합니다.
-            let test = 'hello world'
+            let test = "hello world";
             console.log(test.slice(-5, 9));
             console.log(test.slice(6, 9));
             console.log(test.substring(-5, 9));
@@ -43,14 +43,14 @@
             // 출력 문자열
             // 1. CEO 홍길동
             // 2. CTO 이호준
-            let CEO의위치 = 문제예문.indexOf("CEO")
-            let CTO의위치 = 문제예문.indexOf("CTO")
+            let CEO의위치 = 문제예문.indexOf("CEO");
+            let CTO의위치 = 문제예문.indexOf("CTO");
 
-            let CEO = 문제예문.slice(CEO의위치+4, CTO의위치-1);
-            let CTO = 문제예문.slice(CTO의위치+4);
+            let CEO = 문제예문.slice(CEO의위치 + 4, CTO의위치 - 1);
+            let CTO = 문제예문.slice(CTO의위치 + 4);
 
-            console.log(`1. CEO ${CTO}`)
-            console.log(`2. CTO ${CEO}`)
+            console.log(`1. CEO ${CTO}`);
+            console.log(`2. CTO ${CEO}`);
 
             // substr(시작위치, 길이) : 시작인덱스부터 길이만큼 반환합니다.
             // https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/substr
