@@ -73,7 +73,7 @@ body {
     border-radius: 10px;
     margin: auto;
     background-color: white;
-    background: url(../images/modal.png);
+    /* background: url(../images/modal.png); */
 }
 
 /* header */
@@ -101,7 +101,7 @@ body {
 
 .slogan {
     font-size: 20px;
-    margin: 23px auto 22px 24px;
+    margin: 23px auto 23px 23px;
 }
 
 /* login-form */
@@ -195,6 +195,18 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
+}
+
+/* link-form */
+.link-form {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #767676;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* 참고 css */
