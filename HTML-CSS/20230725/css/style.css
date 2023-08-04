@@ -242,7 +242,7 @@ body {
 }
 
 .social-login .social-list {
-    margin: 20px 0 25px;
+    margin: 29px 0 25px;
 
     display: flex;
     flex-direction: column;
@@ -253,8 +253,10 @@ body {
     min-height: 50px;
     border: 1px solid #767676;
     border-radius: 5px;
+    box-sizing: border-box;
 
     color: #767676;
+    font-size: 16px;
 
     display: flex;
     align-items: center;
@@ -267,12 +269,35 @@ body {
     content: "";
     width: 28px;
     height: 28px;
-    background: url(../images/Group.svg) no-repeat 0 0;
+
+    background-image: url(../images/Group.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 
     position: absolute;
     top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
+    left: 13px;
+    transform: translateY(-40%);
+}
+
+.social-list .account-facebook {
+    border: 1px solid #2d9cdb;
+}
+.social-list .account-naver {
+    border: 1px solid #00bf18;
+}
+.social-list .account-kakao {
+    border: 1px solid #f2c94c;
+}
+
+.social-list .account-facebook::after {
+    background-image: url(../images/facebook.svg);
+}
+.social-list .account-naver::after {
+    background-image: url(../images/naver-logo.svg);
+}
+.social-list .account-kakao::after {
+    background-image: url(../images/message-circle.svg);
 }
 
 /* 참고 css */
