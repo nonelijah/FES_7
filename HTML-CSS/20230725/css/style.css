@@ -73,7 +73,7 @@ body {
     border-radius: 10px;
     margin: auto;
     background-color: white;
-    /* background: url(../images/modal.png); */
+    /* background: url(../images/modal-4.svg); */
 }
 
 /* header */
@@ -127,10 +127,6 @@ body {
 .login-form input::placeholder {
     color: #767676;
     font-weight: 400;
-}
-
-[class^="inp"].error {
-    border: 2px solid #f4492e;
 }
 
 /* login-hold */
@@ -195,6 +191,22 @@ body {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
+}
+
+/* 에러 코드 */
+
+[class^="inp"].error {
+    border: 2px solid #f4492e;
+}
+
+[id^="error"] {
+    color: #f4492e;
+    font-size: 14px;
+    font-weight: 400;
+
+    display: flex;
+    align-self: flex-start;
+    margin-left: 28px;
 }
 
 /* link-form */
