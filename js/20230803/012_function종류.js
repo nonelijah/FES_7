@@ -80,6 +80,26 @@ function test() {
 }
 test();
 
+let a = 10; // 전역변수
+function test() {
+    let a = 100;
+    return a;
+}
+test();
+console.log(a); // 100
+
+let a = 10;
+function test() {
+    let a = 100;
+    function test2() {
+        a = 1000;
+    }
+    test2();
+    console.log(a); // 1000
+}
+test();
+console.log(a); // 10
+
 let a = 10;
 function one() {
     let a = 100; // 지역변수

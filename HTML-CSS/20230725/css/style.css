@@ -199,7 +199,7 @@ body {
 
 /* link-form */
 .link-form {
-    margin-top: 20px;
+    margin-top: 17px;
     font-size: 14px;
     color: #767676;
     font-weight: 400;
@@ -207,6 +207,72 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.link-form .link-join::after {
+    content: "|";
+    margin: 0 12px;
+}
+
+/* 소셜 로그인 */
+
+.login-wrap .social-login {
+    border-top: 1px solid #c4c4c4;
+    margin: 38px 24px 25px;
+    position: relative;
+    z-index: 0;
+}
+
+.login-wrap .social-login::after {
+    content: "또는";
+    width: 52px;
+
+    color: #767676;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.social-login .social-list {
+    margin: 20px 0 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-list [class^="account"] {
+    min-height: 50px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+
+    color: #767676;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+[class^="account"]::after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background: url(../images/Group.svg) no-repeat 0 0;
+
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
 }
 
 /* 참고 css */
