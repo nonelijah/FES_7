@@ -62,7 +62,6 @@ body {
     display: flex;
     color: black;
     font-weight: 500;
-    background-color: skyblue;
 }
 
 .login-wrap {
@@ -73,7 +72,6 @@ body {
     border-radius: 10px;
     margin: auto;
     background-color: white;
-    /* background: url(../images/modal-4.svg); */
 }
 
 /* header */
