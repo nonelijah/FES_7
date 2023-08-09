@@ -1,4 +1,5 @@
 let menu;
+let price = 0;
 
 function order() {
     switch (menu) {
@@ -27,7 +28,11 @@ function order() {
             price = 4500;
             break;
         default:
-            console.log("메뉴를 정확히 입력하세요.");
-            break;
+            menu = prompt("메뉴를 정확히 입력해주세요.");
+            order();
     }
+    console.log(`금액은${price}입니다.`);
 }
+
+menu = prompt("메뉴를 입력해주세요");
+order();
