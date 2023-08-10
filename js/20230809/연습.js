@@ -31,6 +31,8 @@ function order() {
             menu = prompt("메뉴를 정확히 입력해주세요.");
             order();
     }
+}
+if (menu !== 0) {
     console.log(`금액은${price}입니다.`);
 }
 
