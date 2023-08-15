@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>js 복습</title>
+    </head>
+    <body>
+        <p>Lotto</p>
+
+        <p>
+            순서 정렬하기 : 김보영 작가 소설 ('종의 기원담', '7인의 집행관',
+            '다섯번째 감각', '저 이승의 선지자')
+        </p>
+
+        <p>소설 제목과 ISBN 출력하기</p>
+
+        <script>
+            // Lotto
+            /*
+            let lotto = [];
+            while (lotto.length < 6) {
+                let num = parseInt(Math.random() * 45 + 1);
+                if (!lotto.includes(num)) {
+                    lotto.push(num);
+                }
+            }
+            lotto.sort((a, b) => a - b, 0);
+            console.log(lotto);
+            */
+
+            //정렬하기
+            let 김보영 = [
+                {
+                    제목: "종의 기원담",
+                    출판사: "아작",
+                    ISBN: "979-11-6668-733-4",
+                    발매일: "2023.08.01",
+                },
+                {
+                    제목: "7인의 집행관",
+                    출판사: "폴라북스",
+                    ISBN: "978-89-93094-83-1",
+                    발매일: "2013.01.15",
+                },
+                {
+                    제목: "다섯번째 감각",
+                    출판사: "아작",
+                    ISBN: "979-11-6668-660-3",
+                    발매일: "2022.02.10",
+                },
+                {
+                    제목: "저 이승의 선지자",
+                    출판사: "아작",
+                    ISBN: "979-11-87206-54-5",
+                    발매일: "2017.06.20",
+                },
+            ];
+
+            // 제목 순서
+            // 김보영.sort((a, b) => {
+            //     if (a.제목 < b.제목) {
+            //         return -1;
+            //     } else if (a.제목 > b.제목) {
+            //         return 1;
+            //     } else {
+            //         return 0;
+            //     }
+            // });
+
+            // 출간순서
+            김보영.sort(
+                (a, b) =>
+                    parseInt(a.발매일.replaceAll(".", "")) -
+                    parseInt(b.발매일.replaceAll(".", "")),
+                0
+            );
+
+            console.log(김보영);
+
+            // 소설제목, ISBN
+            for (i = 0; i < 김보영.length; i++) {
+                console.log(
+                    `${김보영[i].제목}의 ISBN은 ${김보영[i].ISBN}입니다.`
+                );
+            }
+        </script>
+    </body>
+</html>
