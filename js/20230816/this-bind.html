@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>this</title>
+    </head>
+    <body>
+        <script>
+            const person = {
+                name: "hojun",
+                age: 25,
+                a() {
+                    console.log(this);
+                    console.log(this.name);
+                    function b() {
+                        console.log(this);
+                        console.log(this.name);
+                        function c() {
+                            console.log(this);
+                            console.log(this.name);
+                        }
+                        c();
+                    }
+                    b();
+                },
+            };
+            person.a();
+
+            //출력
+            /*
+            {name: 'hojun', age: 25, a: ƒ}
+            hojun
+
+            Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+            ''
+
+            Window {window: Window, self: Window, document: document, name: '', location: Location, …}
+            ''
+            */
+        </script>
+    </body>
+</html>
