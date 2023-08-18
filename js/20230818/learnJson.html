@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // json
+
+            const json = '{"result" : true, "count":42}';
+            const obj = json.parse(json);
+            console.log(obj);
+
+            const json2 = "[1,2,3]";
+            const arr2 = json2.parse(json);
+            console.log(arr2);
+
+            const json3 = "[1,2,[1,2,3]]";
+            const arr3 = json3.parse(json);
+            console.log(arr3);
+
+            const obj4 = { result: true, count: 42 };
+            const json4 = JSON.stringify(obj4);
+
+            // 깊은 복사
+            const copy = { one: 1, two: 2 };
+
+            const deepCopy = { ...copy };
+
+            // json을 이용한 깊은 복사
+
+            let l = [10, 20, 30];
+            let a = JSON.parse(JSON.stringify(l));
+            // let clone = structuredClone(l);
+            a[0] = 1000;
+
+            console.log(l);
+
+            deepCopy;
+
+            // 얕은 복사
+
+            const shallowCopy = copy;
+        </script>
+    </body>
+</html>
