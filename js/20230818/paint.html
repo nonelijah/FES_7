@@ -29,6 +29,7 @@
                 box-sizing: border-box;
                 border: 1px solid #ddd;
                 background-color: black;
+                margin-bottom: 50px;
                 transition: all 0.3s;
             }
 
@@ -48,15 +49,12 @@
 
             .red {
                 background-color: red;
-                color: white;
             }
             .green {
-                background-color: red;
-                color: white;
+                background-color: green;
             }
             .blue {
-                background-color: red;
-                color: white;
+                background-color: blue;
             }
         </style>
     </head>
@@ -74,6 +72,7 @@
             const target = document.getElementsByClassName("target"),
                 btns = document.querySelectorAll(".wrap [class^=btn]");
 
+            // 코드 작동 안 해서 확인 필요
             btns.forEach((btn) => {
                 btn.addEventListener("click", () => {
                     target.className = "target";
