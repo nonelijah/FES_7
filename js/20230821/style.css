@@ -1,0 +1,64 @@
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap {
+    width: 70vw;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.list-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+[class^="btn"] {
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    background-color: #767676;
+    border: 1px solid #dedede;
+}
+
+.library {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #dedede;
+    transition: all 0.3s;
+    /* 변동값 */
+    display: none;
+}
+
+.library.open {
+    display: block;
+}
+
+.books {
+    font-size: 16px;
+}
+
+.inp-text {
+    width: calc(100% - 40px);
+    height: 22px;
+    margin: 20px;
+    border-radius: 5px;
+}
