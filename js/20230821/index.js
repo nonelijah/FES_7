@@ -24,16 +24,16 @@ books.forEach((book) => {
 // 책 추가, 삭제
 const bookAdd = document.querySelector(".btn-add");
 const bookDel = document.querySelector(".btn-del");
-const inpText = document.querySelector(".inp-text");
-/*
-수정 필요
+
 bookAdd.addEventListener("click", function () {
     const newLi = document.createElement("li");
     const newBook = document.createElement("button");
-    const newBookName = document.createTextNode("");
-    newBookName.textContent = inpText[0].value;
-    newBtn.append(newLi);
-    newLi.append(library);
-    inpText[0].textContent = "";
+    const newBookTit = prompt("책 제목을 입력해주세요.");
+    newBook.append(newBookTit);
+    newBook.classList.add("books");
+    newLi.append(newBook);
+    library.append(newLi);
 });
+/*
+bookDel 구현하는 방법 구상 필요
 */
