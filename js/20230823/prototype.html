@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function Human(name) {
+                this.name = name;
+                this.hp = 100;
+                this.mp = 100;
+            }
+            Human.prototype.sayName = function () {
+                console.log(`${this.name.slice(1)} 씨~`);
+            };
+            Human.prototype.drink = function (drink) {
+                this.hp += drink.hp;
+                this.mp += drink.mp;
+            };
+
+            function Drink(name) {
+                this.name = name;
+                this.hp = 10;
+                this.mp = 10;
+            }
+
+            let 정현 = new Human("안정현");
+            let 예서 = new Human("정예서");
+
+            let 홍차 = new Drink("blackTea");
+            홍차.hp = 45;
+            let 커피 = new Drink("coffee");
+            커피.hp = 30;
+            커피.mp = 30;
+            let 맥주 = new Drink("beer");
+            맥주.hp = -20;
+            맥주.mp = 60;
+        </script>
+    </body>
+</html>
