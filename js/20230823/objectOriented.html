@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let day = 0;
+            function checkDay() {
+                console.log(`오늘은 ${day}일째 입니다.`);
+            }
+            checkDay();
+            // User
+            class User {
+                #id;
+                constructor(name) {
+                    this.name = name;
+                    this.#id = parseInt(Math.random() * 1000000 + 1);
+                    this.hp = 100;
+                    this.mp = 100;
+                    this.money = 10000;
+                }
+                checked() {
+                    console.log(
+                        `${this.name} 님의 HP는 ${this.hp}, MP는 ${this.mp}, Money는 ${this.money} 남아 있습니다.`
+                    );
+                }
+                checkPoint = () => {
+                    if (this.hp > 100) {
+                        this.hp = 100;
+                    }
+                    if (this.mp > 100) {
+                        this.mp = 100;
+                    }
+                    if (this.hp < 0 || this.mp < 0) {
+                        console.log(
+                            `피로로 인하여 더이상 활동할 수 없습니다. 잠을 자러 갑니다.`
+                        );
+                        return this.sleeping();
+                    } else if (this.money < 0) {
+                        console.log("파산하셨습니다.");
+                    }
+                };
+                active(act) {
+                    console.log(
+                        `${this.name} 님이 ${act.name}을(를) 하고 있습니다.`
+                    );
+                    this.hp = this.hp + act.hp;
+                    this.mp = this.mp + act.mp;
+                    this.money = this.money + act.money;
+                    this.checkPoint();
+                }
+                sleeping() {
+                    console.log(`${this.name} 님이 잠을 잡니다.`);
+                    day++;
+                    console.log(
+                        `다음 날이 밝았습니다. 오늘은 ${day}일째 입니다.`
+                    );
+                    this.hp = 100;
+                    this.mp = 100;
+                    return;
+                }
+            }
+            // Active
+            class Active {
+                constructor(name) {
+                    this.name = name;
+                    this.hp = 0;
+                    this.mp = 0;
+                    this.money = 0;
+                }
+            }
+            // create
+            const user = new User("캐릭터");
+
+            const cafe = new Active("카페 아르바이트");
+            cafe.hp = -20;
+            cafe.mp = -40;
+            cafe.money = 15000;
+            const coffee = new Active("커피 마시기");
+            coffee.hp = 20;
+            coffee.mp = 30;
+            coffee.money = -4000;
+            const beer = new Active("술 마시기");
+            beer.hp = -30;
+            beer.mp = 60;
+            beer.money = -7000;
+        </script>
+    </body>
+</html>
