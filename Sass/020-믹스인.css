@@ -1,0 +1,29 @@
+.one {
+  height: 100px;
+  margin: 10px;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.two {
+  height: 100px;
+  margin: 10px;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.three {
+  height: 100px;
+  margin: 10px;
+  background-color: #dedede;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=020-믹스인.css.map */

@@ -1,0 +1,23 @@
+nav ul {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li:nth-child(1) {
+  background-color: red;
+}
+nav ul li:nth-child(1):hover {
+  background-color: white;
+}
+nav ul li:nth-child(1):first-child {
+  color: white;
+}
+nav ul li:nth-child(2) {
+  background-color: green;
+}
+nav ul li:nth-child(3) {
+  background-color: blue;
+}/*# sourceMappingURL=006-부모선택자-앰퍼샌드-연습.css.map */
