@@ -9,6 +9,15 @@ function changeImg() {
     viewFrame.innerHTML = targetLi.innerHTML;
 }
 
+// clickHandle
+function clickHandle() {
+    lis.forEach(function (e) {
+        const targetLi = this;
+        e.classList.remove("selected");
+        console.log(this);
+    });
+}
+
 // keyboardHandle
 function keyboardHandle(e) {
     const firstLi = lis[0],
@@ -37,4 +46,5 @@ function keyboardHandle(e) {
     changeImg();
 }
 
+ul.addEventListener("click", clickHandle);
 document.addEventListener("keydown", keyboardHandle);
