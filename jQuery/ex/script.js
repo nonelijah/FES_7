@@ -8,8 +8,8 @@ function changeImg() {
     viewFrame.innerHTML = "";
     viewFrame.innerHTML = targetLi.innerHTML;
 }
-
 // clickHandle
+/* 
 function clickHandle() {
     lis.forEach(function (e) {
         const targetLi = this;
@@ -17,6 +17,7 @@ function clickHandle() {
         console.log(this);
     });
 }
+*/
 
 // keyboardHandle
 function keyboardHandle(e) {
@@ -46,5 +47,5 @@ function keyboardHandle(e) {
     changeImg();
 }
 
-ul.addEventListener("click", clickHandle);
+// ul.addEventListener("click", clickHandle);
 document.addEventListener("keydown", keyboardHandle);
