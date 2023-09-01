@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .txt {
+                font-size: 20px;
+            }
+
+            .btn {
+                width: 100px;
+                height: 60px;
+                border: 1px solid #767676;
+                border-radius: 15px;
+                background-color: #dedede;
+                font-size: 22px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="txt">some text</p>
+        <button class="btn" type="button">Click</button>
+
+        <script>
+            const txt = document.querySelector(".txt");
+            const btn = document.querySelector(".btn");
+
+            // btn.addEventListener("click", xhrRequest);
+
+            let result;
+
+            function xhrRequest() {
+                const xhrObj = new XMLHttpRequest();
+                xhrObj.open("GET", "message.txt");
+
+                xhrObj.onreadystatechange = () => {
+                    if (xhrObj.readyState === 4 && xhrObj.status === 200) {
+                        result = xhrObj.responseText;
+                        // txt.textContent = result;
+
+                        console.log(result);
+                    }
+                };
+                xhrObj.send();
+            }
+
+            xhrRequest();
+            console.log(result);
+
+            undefined;
+        </script>
+    </body>
+</html>
