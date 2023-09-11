@@ -1,0 +1,11 @@
+폴더 이동
+cd (이동할 폴더명)
+
+탬플릿
+npx create-react-app 생성할폴더명 --template basic-react
+
+시작
+npm start
+
+종료
+ctrl + c
