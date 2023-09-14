@@ -9,3 +9,12 @@ npm start
 
 종료
 ctrl + c
+
+styled-components
+npm install styled-components
+
+reset
+npm i styled-reset
+
+react-router-dom
+npm install react-router-dom
