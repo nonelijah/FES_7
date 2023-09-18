@@ -161,6 +161,10 @@ main {
 /* modal ------------------------------------------ */
 
 #modal {
+    display: none;
+}
+
+#modal.modal-on {
     position: fixed;
     top: 0;
     left: 0;
