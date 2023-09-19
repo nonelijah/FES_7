@@ -127,6 +127,14 @@ main {
     position: absolute;
 }
 
+.cont-result {
+    display: none;
+}
+
+.cont-result.on {
+    display: block;
+}
+
 .cont-result .txt-wannabe {
     margin: 147px auto 127px;
     line-height: 72px;
@@ -159,12 +167,11 @@ main {
 }
 
 /* modal ------------------------------------------ */
-
 #modal {
     display: none;
 }
 
-#modal.modal-on {
+#modal.on {
     position: fixed;
     top: 0;
     left: 0;
@@ -174,8 +181,8 @@ main {
     z-index: 200;
 
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 #modal .modal-wrap {
