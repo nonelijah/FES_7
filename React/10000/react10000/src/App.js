@@ -2,14 +2,16 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Modal from "./components/Modal/Modal";
+import { useState } from "react";
 
 function App() {
+    const [modalShow, setModalShow] = useState(false);
     return (
         <div id="app">
             <Header />
-            <Main />
+            <Main setModalShow={setModalShow} />
             <Footer />
-            <Modal />
+            {modalShow && <Modal setModalShow={setModalShow} />}
         </div>
     );
 }
